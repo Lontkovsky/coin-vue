@@ -15,7 +15,7 @@
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </fieldset>
                     </form>
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto nav-width">
                       <span>Currency</span>
                       <drop-down tag="li">
                         <template slot="title">BTC</template>
@@ -41,7 +41,7 @@
               <label for="tab3">TOKENS</label>
                 <section id="content1">
                   <div class="table-responsive">
-                    <l-table class="table-hover table-striped"
+                    <l-table class="table-hover table-bold"
                              :columns="table1.columns"
                              :data="table1.data">
                     </l-table>
@@ -49,7 +49,7 @@
                 </section>
                 <section id="content2">
                   <div class="table-responsive">
-                    <l-table class="table-hover table-striped"
+                    <l-table class="table-hover table-bold"
                              :columns="table2.columns"
                              :data="table2.data">
                     </l-table>
@@ -57,7 +57,7 @@
                 </section>
                 <section id="content3">
                   <div class="table-responsive">
-                    <l-table class="table-hover table-striped"
+                    <l-table class="table-hover table-bold"
                              :columns="table3.columns"
                              :data="table3.data">
                     </l-table>
@@ -78,20 +78,20 @@
   import TopNavbar from 'src/components/Dashboard/Layout/TopNavbar.vue'
   import ContentFooter from 'src/components/Dashboard/Layout/ContentFooter.vue'
   import DashboardContent from 'src/components/Dashboard/Layout/Content.vue'
-  const tableColumns = ['Currency', 'Price', 'Change24h', 'MarketCap', 'Signal'];
-  const tableData = [
+  const tableColumns = ['Currency', 'Price', 'Change24h', 'MarketCap', 'Signal']
+const tableData = [
     {
       currency: 'Ethereum (ETH)',
       price: '0.09689320 BTC',
       change24h: '0.00%',
       marketcap: '71,301,716,692 USD / 0.9%',
       signal: 'Neutral',
-      logo: "static/img/crypto_logos/eth.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: 'static/img/crypto_logos/eth.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
   },
     {
       currency: 'Bitcoin Cash (BCH)',
@@ -99,12 +99,12 @@
       change24h: '-3.36%',
       marketcap: '42,243,509,094 USD / 0.54%',
       signal: 'Buy',
-      logo: "./static/img/crypto_logos/bch.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/bch.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'Bitcoin (BTC)',
@@ -112,12 +112,12 @@
       change24h: '0.00%',
       marketcap: '230,838,626,359 USD / 01%',
       signal: 'Strought buy',
-      logo: "./static/img/crypto_logos/btc.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/btc.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'Ripple (XRP)',
@@ -125,12 +125,12 @@
       change24h: '2.95%',
       marketcap: '128,875,903,264 USD / 1%',
       signal: 'Strought buy',
-      logo: "./static/img/crypto_logos/xrp.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/xrp.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'Cardano (BCH)',
@@ -138,12 +138,12 @@
       change24h: '3.36%',
       marketcap: '71,301,716,692 USD / 0.9%',
       signal: 'Neutral',
-      logo: "./static/img/crypto_logos/cardano.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/cardano.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'NEO (XRP)',
@@ -151,12 +151,12 @@
       change24h: '-2.95%',
       marketcap: '42,243,509,094 USD / 0.54%',
       signal: 'Sell',
-      logo: "./static/img/crypto_logos/neo.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/neo.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'EOS (EOS)',
@@ -164,12 +164,12 @@
       change24h: '1.17%',
       marketcap: '230,838,626,359 USD / 01%',
       signal: 'Strought sell',
-      logo: "./static/img/crypto_logos/eos.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/eos.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'Litecoin (LTC)',
@@ -177,12 +177,12 @@
       change24h: '3.36%',
       marketcap: '128,875,903,264 USD / 1%',
       signal: 'Strought sell',
-      logo: "./static/img/crypto_logos/ltc.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/ltc.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'NEM (NEM)',
@@ -190,12 +190,12 @@
       change24h: '-1.17%',
       marketcap: '71,301,716,692 USD / 0.9%',
       signal: 'Sell',
-      logo: "./static/img/crypto_logos/nem.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/nem.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'IOTA (IOT)',
@@ -203,12 +203,12 @@
       change24h: '-3.36%',
       marketcap: '42,243,509,094 USD / 0.54%',
       signal: 'Neutral',
-      logo: "./static/img/crypto_logos/iot.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/iot.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'Dash (DSC)',
@@ -216,12 +216,12 @@
       change24h: '-1.17%',
       marketcap: '230,838,626,359 USD / 01%',
       signal: 'Strought sell',
-      logo: "./static/img/crypto_logos/dsc.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/dsc.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'Monero (MNR)',
@@ -229,12 +229,12 @@
       change24h: '-3.36%',
       marketcap: '128,875,903,264 USD / 1%',
       signal: 'Strought sell',
-      logo: "./static/img/crypto_logos/mnr.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/mnr.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'VeChain (VEN)',
@@ -242,12 +242,12 @@
       change24h: '-1.17%',
       marketcap: '71,301,716,692 USD / 0.9%',
       signal: 'Sell',
-      logo: "./static/img/crypto_logos/ven.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/ven.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'VeChain (VEN)',
@@ -255,12 +255,12 @@
       change24h: '-1.17%',
       marketcap: '71,301,716,692 USD / 0.9%',
       signal: 'Sell',
-      logo: "./static/img/crypto_logos/ven.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/ven.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'Ethereum Classic (BCH)',
@@ -268,12 +268,12 @@
       change24h: '-3.36%',
       marketcap: '42,243,509,094 USD / 0.54%',
       signal: 'Neutral',
-      logo: "./static/img/crypto_logos/ethc.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/ethc.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'VeChain (VEN)',
@@ -281,12 +281,12 @@
       change24h: '-1.17%',
       marketcap: '71,301,716,692 USD / 0.9%',
       signal: 'Sell',
-      logo: "./static/img/crypto_logos/ven.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
+      logo: './static/img/crypto_logos/ven.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
     },
     {
       currency: 'Ethereum Classic (BCH)',
@@ -294,15 +294,15 @@
       change24h: '-3.36%',
       marketcap: '42,243,509,094 USD / 0.54%',
       signal: 'Neutral',
-      logo: "./static/img/crypto_logos/ethc.png",
-      neutral: "static/img/crypto_logos/n_icon.png",
-      buy: "static/img/crypto_logos/b_icon.png",
-      sell: "static/img/crypto_logos/s_icon.png",
-      up: "static/img/arrowUp.png",
-      down: "static/img/arrowDown.png"
-    },
-  ];
-  export default {
+      logo: './static/img/crypto_logos/ethc.png',
+      neutral: 'static/img/crypto_logos/n_icon.png',
+      buy: 'static/img/crypto_logos/b_icon.png',
+      sell: 'static/img/crypto_logos/s_icon.png',
+      up: 'static/img/arrowUp.png',
+      down: 'static/img/arrowDown.png'
+    }
+  ]
+export default {
     components: {
       TopNavbar,
       ContentFooter,
@@ -363,7 +363,7 @@
   label {
     display: inline-block;
     margin: 0 0 -1px;
-    padding: 15px 25px;
+    padding: 15px 15px;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
@@ -469,5 +469,9 @@
     transition-duration: 0.3s;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
+  }
+
+  .nav-width{
+    width:50%;
   }
 </style>

@@ -61,20 +61,16 @@
     border-top: 2px solid transparent;
     background: #f4f4f4;
   }
-  .table-striped tbody tr:nth-child(2n) {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  .table-striped tbody tr:nth-child(1){
+
+  .table-bold tbody tr:nth-child(1){
     font-weight: 800;
     border-left: 10px solid #1b2021;
   }
-  .table-striped tbody tr:nth-child(2){
+  .table-bold tbody tr:nth-child(2){
     font-weight: 800;
     border-left: 10px solid #1b2021;
   }
-
-
+  .table-bold tbody tr:nth-child(n+3){
+    border-left: 10px solid #FFF;
+  }
 </style>
