@@ -68,7 +68,12 @@
     background-color: rgba(0, 0, 0, 0);
   }
   .table-striped tbody tr:nth-child(1){
-
+    font-weight: 800;
+    border-left: 10px solid #1b2021;
+  }
+  .table-striped tbody tr:nth-child(2){
+    font-weight: 800;
+    border-left: 10px solid #1b2021;
   }
 
 

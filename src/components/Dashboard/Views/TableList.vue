@@ -75,7 +75,7 @@
 <script>
   import LTable from 'src/components/UIComponents/Table.vue'
   import Card from 'src/components/UIComponents/Cards/Card.vue'
-  import TopNavbar from 'components/Dashboard/Layout/TopNavbar.vue'
+  import TopNavbar from 'src/components/Dashboard/Layout/TopNavbar.vue'
   import ContentFooter from 'src/components/Dashboard/Layout/ContentFooter.vue'
   import DashboardContent from 'src/components/Dashboard/Layout/Content.vue'
   const tableColumns = ['Currency', 'Price', 'Change24h', 'MarketCap', 'Signal'];
@@ -86,7 +86,7 @@
       change24h: '0.00%',
       marketcap: '71,301,716,692 USD / 0.9%',
       signal: 'Neutral',
-      logo: "static/img/crypto_logos/eth.pngrm -rf .git",
+      logo: "static/img/crypto_logos/eth.png",
       neutral: "static/img/crypto_logos/n_icon.png",
       buy: "static/img/crypto_logos/b_icon.png",
       sell: "static/img/crypto_logos/s_icon.png",
@@ -347,8 +347,6 @@
   section {
     font-family: "PT Mono";
     display: none;
-    padding: 20px 0 0;
-    margin-top:-20px;
   }
 
   span{

@@ -57,15 +57,18 @@
   }
 
   .login {
+    font-family: "PT Sans";
     width: 43px;
-    height: 18px;
+    height: 16px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-right: 2.2em;
   }
 
   .news{
+    font-family: "PT Sans";
     margin-left: 3.8em;
     color: #757575;
     width: 42px;
