@@ -15,7 +15,7 @@
 </script>
 <style>
   .back {
-    width: 80%;
+    width: 90%;
     background-color: #171717;
     margin: 2em auto;
     height: 180px;
@@ -38,7 +38,7 @@
 
   .button-wrap{
     float: right;
-    padding: 3.65em;
+    padding: 6em;
     width: 33.33%;
   }
 

@@ -1,16 +1,16 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-black">
     <div class="container-fluid">
-      <img src="static/img/Logo.png">
+      <a href="/"><img src="static/img/Logo.png"></a>
       <div class="collapse navbar-collapse justify-content-end">
         <ul class="nav navbar-nav mr-auto">
           <li class="nav-item nav-link">
-            <a class="news" href="#">NEWS</a>
+            <a class="news" href="news">NEWS</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="login">
+            <a href="login" class="login">
               LOGIN
             </a>
           </li>
@@ -27,31 +27,31 @@
 <script>
   export default {
     computed: {
-      routeName () {
+      routeName() {
         const {name} = this.$route
         return this.capitalizeFirstLetter(name)
       }
     },
-    data () {
+    data() {
       return {
         activeNotifications: false
       }
     },
     methods: {
-      capitalizeFirstLetter (string) {
+      capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1)
       },
-      toggleNotificationDropDown () {
+      toggleNotificationDropDown() {
         this.activeNotifications = !this.activeNotifications
       },
-      closeDropDown () {
+      closeDropDown() {
         this.activeNotifications = false
       }
     }
   }
 </script>
 <style scoped>
-  .navbar-black{
+  .navbar-black {
     height: 78px;
     background: #1b2021;
   }
@@ -64,12 +64,12 @@
     margin-right: 30px;
   }
 
-  .news{
+  .news {
     font-family: "PT Sans";
     margin-left: 30px;
     color: #757575;
     font-weight: 700;
     text-transform: uppercase;
-    }
+  }
 
 </style>

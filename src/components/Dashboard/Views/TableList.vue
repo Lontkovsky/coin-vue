@@ -1,45 +1,45 @@
 <template>
   <div>
-  <TopNavbar></TopNavbar>
+    <TopNavbar></TopNavbar>
 
-  <div class="content">
+    <div class="content">
       <div class="row">
         <div class="col-12">
           <card>
             <template slot="header">
               <nav class="navbar navbar-expand-lg navbar-right">
-                  <div class="collapse navbar-collapse justify-content-end">
-                    <form>
-                      <fieldset>
+                <div class="collapse navbar-collapse justify-content-end">
+                  <form>
+                    <fieldset>
                       <input type="search" placeholder="Search"/>
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                      <button type="submit"><i class="fa fa-search"></i></button>
                     </fieldset>
-                    </form>
-                    <ul class="navbar-nav ml-auto nav-width">
-                      <span>Currency</span>
-                      <drop-down tag="li">
-                        <template slot="title">BTC</template>
-                        <a class="dropdown-item" href="#">BTC</a>
-                        <a class="dropdown-item" href="#">USD</a>
-                      </drop-down>
-                      <span>View</span>
-                      <drop-down tag="li">
-                        <template slot="title">TOP 100 LIST</template>
-                        <a class="dropdown-item" href="#">TOP 100</a>
-                        <a class="dropdown-item" href="#">ALL</a>
-                      </drop-down>
-                    </ul>
-                  </div>
+                  </form>
+                  <ul class="navbar-nav ml-auto nav-width">
+                    <span>Currency</span>
+                    <drop-down tag="li">
+                      <template slot="title">BTC</template>
+                      <a class="dropdown-item" href="#">BTC</a>
+                      <a class="dropdown-item" href="#">USD</a>
+                    </drop-down>
+                    <span>View</span>
+                    <drop-down tag="li">
+                      <template slot="title">TOP 100 LIST</template>
+                      <a class="dropdown-item" href="#">TOP 100</a>
+                      <a class="dropdown-item" href="#">ALL</a>
+                    </drop-down>
+                  </ul>
+                </div>
               </nav>
 
               <template>
-              <input id="tab1" type="radio" name="tabs" checked>
-              <label for="tab1">ALL</label>
-              <input id="tab2" type="radio" name="tabs">
-              <label for="tab2">COINS</label>
-              <input id="tab3" type="radio" name="tabs">
-              <label for="tab3">TOKENS</label>
-                <section id="content1">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1">ALL</label>
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2">COINS</label>
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3">TOKENS</label>
+                <section id="content1" class="section">
                   <div class="table-responsive">
                     <l-table class="table-hover table-bold"
                              :columns="table1.columns"
@@ -70,7 +70,7 @@
       </div>
     </div>
     <ContentFooter></ContentFooter>
-    </div>
+  </div>
 </template>
 <script>
   import LTable from 'src/components/UIComponents/Table.vue'
@@ -78,8 +78,9 @@
   import TopNavbar from 'src/components/Dashboard/Layout/TopNavbar.vue'
   import ContentFooter from 'src/components/Dashboard/Layout/ContentFooter.vue'
   import DashboardContent from 'src/components/Dashboard/Layout/Content.vue'
+
   const tableColumns = ['Currency', 'Price', 'Change24h', 'MarketCap', 'Signal']
-const tableData = [
+  const tableData = [
     {
       currency: 'Ethereum (ETH)',
       price: '0.09689320 BTC',
@@ -92,7 +93,7 @@ const tableData = [
       sell: 'static/img/crypto_logos/s_icon.png',
       up: 'static/img/arrowUp.png',
       down: 'static/img/arrowDown.png'
-  },
+    },
     {
       currency: 'Bitcoin Cash (BCH)',
       price: '0.18213800 BTC',
@@ -302,7 +303,7 @@ const tableData = [
       down: 'static/img/arrowDown.png'
     }
   ]
-export default {
+  export default {
     components: {
       TopNavbar,
       ContentFooter,
@@ -310,7 +311,7 @@ export default {
       LTable,
       Card
     },
-    data () {
+    data() {
       return {
         table1: {
           columns: [...tableColumns],
@@ -349,14 +350,14 @@ export default {
     display: none;
   }
 
-  span{
+  span {
     font-family: "PT Sans";
     color: #757575;
     font-size: 14px;
     margin-top: 4px;
   }
 
-  input[type="radio"]{
+  input[type="radio"] {
     display: none;
   }
 
@@ -399,6 +400,7 @@ export default {
     label {
       font-size: 0;
     }
+
     label:before {
       margin: 0;
       font-size: 18px;
@@ -411,7 +413,7 @@ export default {
     }
   }
 
-  .navbar-right{
+  .navbar-right {
     float: right;
     width: 57%;
   }
@@ -471,7 +473,10 @@ export default {
     transition: all 0.1s ease-in-out;
   }
 
-  .nav-width{
-    width:50%;
+  .nav-width {
+    width: 50%;
+  }
+  .section{
+    font-size: 14px;
   }
 </style>
